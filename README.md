@@ -1,2 +1,2 @@
 # Regex-Constants-Collection
-Collection of most useful regexes
+Collection of most useful regex expressions
