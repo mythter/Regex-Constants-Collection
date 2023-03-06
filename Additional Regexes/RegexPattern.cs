@@ -1,4 +1,6 @@
-﻿namespace RegexPatterns
+﻿using System.Globalization;
+
+namespace RegexPatterns
 {
     public static class RegexPattern
     {
@@ -15,5 +17,41 @@
         /// Source: https://stackoverflow.com/a/18091377 in https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
         /// 
         public const string Phone = @"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}";
+
+        /// <summary>
+        ///  Decimal number pattern. It allows both "." and "," separators.
+        /// </summary>
+        /// 
+        public const string Decimal = @"^[+-]?\d{1,9}[,.]?\d{0,5}$";
+
+        /// <summary>
+        ///  Decimal number pattern. It allows only "," separator.
+        /// </summary>
+        /// 
+        public const string DecimalComma = @"^[+-]?\d{1,9},?\d{0,5}$";
+
+        /// <summary>
+        ///  Decimal number pattern. It allows only "." separator.
+        /// </summary>
+        /// 
+        public const string DecimalDot = @"^[+-]?\d{1,9}.?\d{0,5}$";
+
+        /// <summary>
+        /// Pattern for numbers on scientific notation. It allows both "." and "," separators.
+        /// </summary>
+        ///
+        public const string DecimalScientific = @"^[\+-]?\d{1,9}[,.]?\d{0,5}[eE][\+-] ?\d{1,2}$";
+
+        /// <summary>
+        /// Pattern for numbers on scientific notation. It allows only "," separator.
+        /// </summary>
+        ///
+        public const string DecimalScientificComma = @"^[\+-]?\d{1,9},?\d{0,5}[eE][\+-] ?\d{1,2}$";
+
+        /// <summary>
+        /// Pattern for numbers on scientific notation. It allows only "." separator.
+        /// </summary>
+        ///
+        public const string DecimalScientificDot = @"^[\+-]?\d{1,9}.?\d{0,5}[eE][\+-] ?\d{1,2}$";
     }
 }

@@ -17,7 +17,7 @@
         public const string EmailMSDN = @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
 
         /// <summary>
-        /// Github rhyous email pattern.
+        /// Rhyous's email pattern (Github).
         /// </summary>
         /// Source: https://github.com/rhyous/EmailRegEx
         /// 
@@ -41,5 +41,46 @@
         /// 
         public const string PhoneNANP = @"((?:\(?[2-9](?:(?=1)1[02-9]|(?:(?=0)0[1-9]|\d{2}))\)?\D{0,3})(?:\(?[2-9](?:(?=1)1[02-9]|\d{2})\)?\D{0,3})\d{4})";
 
+        /// <summary>
+        ///  Decimal number pattern. It allows both "." and ",".
+        /// </summary>
+        /// 
+        public const string Decimal = @"^[\+-]?\d{1,9}[,.]?\d{0,5}$";
+
+        /// <summary>
+        ///  Decimal number pattern. It allows only "," separator.
+        /// </summary>
+        /// 
+        public const string DecimalComma = @"^[+-]?\d{1,9},?\d{0,5}$";
+
+        /// <summary>
+        ///  Decimal number pattern. It allows only "." separator.
+        /// </summary>
+        /// 
+        public const string DecimalDot = @"^[+-]?\d{1,9}.?\d{0,5}$";
+
+        // -----------------------------------------------------------------------------------------
+        // Patter for decimal number with separator of your current culture 
+        // char separator = CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator[0];
+        // string DecimalCulture = @"^[+-]?\d{1,9}" + separator.ToString() + @"?\d{0,5}$";
+        // -----------------------------------------------------------------------------------------
+
+        /// <summary>
+        /// Pattern for numbers on scientific notation.
+        /// </summary>
+        /// 
+        public const string DecimalScientific = @"^[\+-]?\d{1,9}[,.]?\d{0,5}[eE][\+-] ?\d{1,2}$";
+
+        /// <summary>
+        /// Pattern for numbers on scientific notation. It allows only "," separator.
+        /// </summary>
+        ///
+        public const string DecimalScientificComma = @"^[\+-]?\d{1,9},?\d{0,5}[eE][\+-] ?\d{1,2}$";
+
+        /// <summary>
+        /// Pattern for numbers on scientific notation. It allows only "." separator.
+        /// </summary>
+        ///
+        public const string DecimalScientificDot = @"^[\+-]?\d{1,9}.?\d{0,5}[eE][\+-] ?\d{1,2}$";
     }
 }
