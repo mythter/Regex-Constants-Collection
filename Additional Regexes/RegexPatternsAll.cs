@@ -1,6 +1,6 @@
 ﻿namespace RegexPatterns
 {
-    public static class RegexPattern
+    public static class RegexPatternAll
     {
         /// <summary>
         /// Microsoft reference source data annotation email pattern.
@@ -17,7 +17,7 @@
         public const string EmailMSDN = @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
 
         /// <summary>
-        /// Rhyous's (Github) email pattern.
+        /// Github rhyous email pattern.
         /// </summary>
         /// Source: https://github.com/rhyous/EmailRegEx
         /// 
