@@ -22,19 +22,19 @@ namespace RegexPatterns
         /// Pattern for decimal numbers on non-scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         /// 
-        public const string Decimal = @"^[+-]?\d{1,9}[,.]?\d{0,5}$";
+        public const string Decimal = @"^[\+-]?\d{1,9}[,.]?\d{0,5}$";
 
         /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows only "," delimiter.
         /// </summary>
         /// 
-        public const string DecimalComma = @"^[+-]?\d{1,9},?\d{0,5}$";
+        public const string DecimalComma = @"^[\+-]?\d{1,9},?\d{0,5}$";
 
         /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows only "." delimiter.
         /// </summary>
         /// 
-        public const string DecimalDot = @"^[+-]?\d{1,9}.?\d{0,5}$";
+        public const string DecimalDot = @"^[\+-]?\d{1,9}.?\d{0,5}$";
 
         /// <summary>
         /// Pattern for decimal numbers on scientific notation. It allows both "." and "," delimiters.

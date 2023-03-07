@@ -17,7 +17,7 @@
         public const string EmailMSDN = @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
 
         /// <summary>
-        /// Pattern for email addresses by rhyous.
+        /// Pattern for email addresses by rhyous (Github).
         /// </summary>
         /// Source: https://github.com/rhyous/EmailRegEx
         /// 
