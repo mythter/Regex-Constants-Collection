@@ -2,6 +2,9 @@
 
 namespace RegexPatterns
 {
+    /// <summary>
+    /// Contains most useful regex patterns
+    /// </summary>
     public static class RegexPattern
     {
         /// <summary>
