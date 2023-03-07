@@ -2,6 +2,9 @@
 
 namespace RegexPatterns
 {
+    /// <summary>
+    /// Contains all added regex patterns
+    /// </summary>
     public static class RegexPatternAll
     {
         /// <summary>
