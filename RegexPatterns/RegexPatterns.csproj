@@ -12,12 +12,13 @@
     <RepositoryType>git</RepositoryType>
     <Authors>Oyne, mythter</Authors>
     <PackageTags>regex;reg;pattern;patterns;regex pattern;regex pattern;regex collection;regular;expression;regular expression;regexpattern;regexpatterns;regular expression collection;regular expressions;regular expression patterns</PackageTags>
-    <PackageReleaseNotes>Email, phone number and decimal number patterns added</PackageReleaseNotes>
+    <PackageReleaseNotes>Comments added</PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
+    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
