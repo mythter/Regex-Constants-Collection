@@ -54,13 +54,6 @@ namespace RegexPatterns
         public static Regex Phone2 = new Regex(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}");
 
         /// <summary>
-        /// Pattern for mobile phone number.
-        /// </summary>
-        /// Source: https://stackoverflow.com/a/71642391 in https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
-        /// 
-        public static Regex Phone3 = new Regex(@"\(?\+?\d{1}\)\?\-?\(?\d{3}\)?-? *\d{3}-? *-?\d{4}");
-
-        /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         /// 
