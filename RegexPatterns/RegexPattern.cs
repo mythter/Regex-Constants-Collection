@@ -16,7 +16,7 @@ namespace RegexPatterns
         /// </summary>
         /// Source: https://uibakery.io/regex-library/phone-number-csharp
         /// 
-        public static Regex Phone = new Regex(@"^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$");
+        public static Regex Phone = new Regex(@"^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$");
 
         /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows both "." and "," delimiters.
