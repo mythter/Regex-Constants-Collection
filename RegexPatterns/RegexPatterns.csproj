@@ -13,9 +13,15 @@
     <Authors>Oyne,mythter</Authors>
     <PackageTags>regex;reg;pattern;patterns;regex pattern;regex pattern;regex collection;regular;expression;regular expression;regexpattern;regexpatterns;regular expression collection;regular expressions;regular expression patterns</PackageTags>
     <PackageReleaseNotes>Email, phone number and decimal number patterns added</PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
