@@ -6,9 +6,13 @@
     <Nullable>enable</Nullable>
     <Title>Regex Patterns</Title>
     <Description>Collection of most useful Regex patterns </Description>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/mythter/Regex-Patterns-Collection</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/mythter/Regex-Patterns-Collection</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>Oyne,mythter</Authors>
+    <PackageTags>regex;reg;pattern;patterns;regex pattern;regex pattern;regex collection;regular;expression;regular expression;regexpattern;regexpatterns;regular expression collection;regular expressions;regular expression patterns</PackageTags>
+    <PackageReleaseNotes>Email, phone number and decimal number patterns added</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

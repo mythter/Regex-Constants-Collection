@@ -116,7 +116,5 @@ namespace RegexPatterns
         // char separator = CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator[0];
         // string DecimalCulture = @"^[+-]?\d{1,9}" + separator.ToString() + @"?\d{0,5}$";
         // -----------------------------------------------------------------------------------------
-
-
     }
 }
