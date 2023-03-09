@@ -57,55 +57,55 @@ namespace RegexPatterns
         /// Pattern for decimal numbers on non-scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         /// 
-        public static Regex Decimal = new Regex(@"^[\+-]?\d{1,9}[,.]?\d{0,9}$");
+        public static Regex Decimal = new Regex(@"^[\+-]?\d+[,.]?\d*$");
 
         /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows only "," delimiter.
         /// </summary>
         /// 
-        public static Regex DecimalComma = new Regex(@"^[\+-]?\d{1,9},?\d{0,9}$");
+        public static Regex DecimalComma = new Regex(@"^[\+-]?\d+,?\d*$");
 
         /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows only "." delimiter.
         /// </summary>
         /// 
-        public static Regex DecimalDot = new Regex(@"^[\+-]?\d{1,9}\.?\d{0,9}$");
+        public static Regex DecimalDot = new Regex(@"^[\+-]?\d+\.?\d*$");
 
         /// <summary>
         /// Pattern for decimal numbers on scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         ///
-        public static Regex DecimalScientific = new Regex(@"^[\+-]?\d{1,9}[,.]?\d{0,9}[eE][\+-] ?\d{1,2}$");
+        public static Regex DecimalScientific = new Regex(@"^[\+-]?\d+[,.]?\d*[eE][\+-] ?\d+$");
 
         /// <summary>
         /// Pattern for decimal numbers on scientific notation. It allows only "," delimiter.
         /// </summary>
         ///
-        public static Regex DecimalScientificComma = new Regex(@"^[\+-]?\d{1,9},?\d{0,9}[eE][\+-] ?\d{1,2}$");
+        public static Regex DecimalScientificComma = new Regex(@"^[\+-]?\d+,?\d*[eE][\+-] ?\d+$");
 
         /// <summary>
         /// Pattern for decimal numbers on scientific notation. It allows only "." delimiter.
         /// </summary>
         ///
-        public static Regex DecimalScientificDot = new Regex(@"^[\+-]?\d{1,9}\.?\d{0,9}[eE][\+-] ?\d{1,2}$");
+        public static Regex DecimalScientificDot = new Regex(@"^[\+-]?\d+\.?\d*[eE][\+-] ?\d+$");
 
         /// <summary>
         /// Pattern for decimal numbers on any notation. It allows both "." and "," delimiters.
         /// </summary>
         ///
-        public static Regex DecimalAny = new Regex(@"^[\+-]?\d{1,9}[,.]?\d{0,9}([eE][\+-]?)?\d{1,2}$");
+        public static Regex DecimalAny = new Regex(@"^[\+-]?\d+[,.]?\d*([eE][\+-]?)?\d+$");
 
         /// <summary>
         /// Pattern for decimal numbers on any notation. It allows only "," delimiter.
         /// </summary>
         ///
-        public static Regex DecimalAnyComma = new Regex(@"^[\+-]?\d{1,9},?\d{0,9}([eE][\+-]?)?\d{1,2}$");
+        public static Regex DecimalAnyComma = new Regex(@"^[\+-]?\d+,?\d*([eE][\+-]?)?\d+$");
 
         /// <summary>
         /// Pattern for decimal numbers on any notation. It allows only "." delimiter.
         /// </summary>
         ///
-        public static Regex DecimalAnyDot = new Regex(@"^[\+-]?\d{1,9}\.?\d{0,9}([eE][\+-]?)?\d{1,2}$");
+        public static Regex DecimalAnyDot = new Regex(@"^[\+-]?\d+\.?\d*([eE][\+-]?)?\d+$");
 
         // -----------------------------------------------------------------------------------------
         // Patter for decimal numbers with separator of your current culture 
