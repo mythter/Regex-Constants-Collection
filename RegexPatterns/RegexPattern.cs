@@ -43,19 +43,19 @@ namespace RegexPatterns
         /// Pattern for decimal numbers on scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         ///
-        public static Regex DecimalScientific = new Regex(@"^[\+-]?\d+[,.]?\d*[eE][\+-] ?\d+$");
+        public static Regex DecimalScientific = new Regex(@"^[\+-]?\d+[,.]?\d*[eE][\+-]\d+$");
 
         /// <summary>
         /// Pattern for decimal numbers on scientific notation. It allows only "," delimiter.
         /// </summary>
         ///
-        public static Regex DecimalScientificComma = new Regex(@"^[\+-]?\d+,?\d*[eE][\+-] ?\d+$");
+        public static Regex DecimalScientificComma = new Regex(@"^[\+-]?\d+,?\d*[eE][\+-]\d+$");
 
         /// <summary>
         /// Pattern for decimal numbers on scientific notation. It allows only "." delimiter.
         /// </summary>
         ///
-        public static Regex DecimalScientificDot = new Regex(@"^[\+-]?\d+\.?\d*[eE][\+-] ?\d+$");
+        public static Regex DecimalScientificDot = new Regex(@"^[\+-]?\d+\.?\d*[eE][\+-]\d+$");
 
         /// <summary>
         /// Pattern for decimal numbers on any notation. It allows both "." and "," delimiters.
