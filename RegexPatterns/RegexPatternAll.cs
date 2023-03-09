@@ -19,14 +19,14 @@ namespace RegexPatterns
         /// </summary>
         /// Source: https://learn.microsoft.com/en-us/dotnet/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format?redirectedfrom=MSDN
         ///
-        public static Regex EmailMSDN = new Regex(@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
+        public static Regex Email2 = new Regex(@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
 
         /// <summary>
         /// Pattern for email addresses by rhyous (Github).
         /// </summary>
         /// Source: https://github.com/rhyous/EmailRegEx
         /// 
-        public static Regex Email2 =
+        public static Regex Email3 =
             new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" // local-part
             +"@"
             + @"((([\w]+([-\w]*[\w]+)*\.)+[a-zA-Z]+)|" // domain
@@ -44,32 +44,32 @@ namespace RegexPatterns
         /// </summary>
         /// Source: https://stackoverflow.com/a/47139109 in https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
         /// 
-        public static Regex PhoneNANP = new Regex(@"((?:\(?[2-9](?:(?=1)1[02-9]|(?:(?=0)0[1-9]|\d{2}))\)?\D{0,3})(?:\(?[2-9](?:(?=1)1[02-9]|\d{2})\)?\D{0,3})\d{4})");
+        public static Regex Phone2 = new Regex(@"((?:\(?[2-9](?:(?=1)1[02-9]|(?:(?=0)0[1-9]|\d{2}))\)?\D{0,3})(?:\(?[2-9](?:(?=1)1[02-9]|\d{2})\)?\D{0,3})\d{4})");
 
         /// <summary>
         /// Pattern for mobile phone number.
         /// </summary>
         /// Source: https://stackoverflow.com/a/18091377 in https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
         /// 
-        public static Regex Phone2 = new Regex(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}");
+        public static Regex Phone3 = new Regex(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}");
 
         /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         /// 
-        public static Regex Decimal = new Regex(@"^[+-]?\d{1,9}[,.]?\d{0,5}$");
+        public static Regex Decimal = new Regex(@"^[\+-]?\d{1,9}[,.]?\d{0,5}$");
 
         /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows only "," delimiter.
         /// </summary>
         /// 
-        public static Regex DecimalComma = new Regex(@"^[+-]?\d{1,9},?\d{0,5}$");
+        public static Regex DecimalComma = new Regex(@"^[\+-]?\d{1,9},?\d{0,5}$");
 
         /// <summary>
         /// Pattern for decimal numbers on non-scientific notation. It allows only "." delimiter.
         /// </summary>
         /// 
-        public static Regex DecimalDot = new Regex(@"^[+-]?\d{1,9}.?\d{0,5}$");
+        public static Regex DecimalDot = new Regex(@"^[\+-]?\d{1,9}.?\d{0,5}$");
 
         /// <summary>
         /// Pattern for decimal numbers on scientific notation. It allows both "." and "," delimiters.

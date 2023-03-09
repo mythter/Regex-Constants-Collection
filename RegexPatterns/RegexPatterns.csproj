@@ -11,8 +11,8 @@
     <RepositoryUrl>https://github.com/mythter/Regex-Patterns-Collection</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Authors>Oyne, mythter</Authors>
-    <PackageTags>regex;reg;pattern;patterns;regex pattern;regex pattern;regex collection;regular;expression;regular expression;regexpattern;regexpatterns;regular expression collection;regular expressions;regular expression patterns</PackageTags>
-    <PackageReleaseNotes>Comments added</PackageReleaseNotes>
+    <PackageTags>regex;reg;pattern;patterns;collection;regular;expression;regexpattern;regexpatterns;expressions</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Version>1.0.3</Version>
