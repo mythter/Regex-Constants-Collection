@@ -30,7 +30,14 @@ namespace RegexPatterns
             new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" // local-part
             +"@"
             + @"((([\w]+([-\w]*[\w]+)*\.)+[a-zA-Z]+)|" // domain
-            + @"((([01]?[0-9]{1,2}|2[0-4][0-9]|25[0-5]).){3}[01]?[0-9]{1,2}|2[0-4][0-9]|25[0-5]))\z"); // or IP Address    
+            + @"((([01]?[0-9]{1,2}|2[0-4][0-9]|25[0-5]).){3}[01]?[0-9]{1,2}|2[0-4][0-9]|25[0-5]))\z"); // or IP Address
+
+        /// <summary>
+        /// Pattern for validating multiple emails. It allows both "," and ";" delimiters to separate emails
+        /// </summary>
+        /// Source: https://www.c-sharpcorner.com/blogs/regex-for-multiple-email-validation1
+        ///
+        public static Regex Email4 = new Regex(@"^((\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)\s*[;,.]{0,1}\s*)+$");
 
         /// <summary>
         /// Pattern for mobile phone number.
