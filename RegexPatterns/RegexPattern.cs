@@ -8,7 +8,7 @@ namespace RegexPatterns
     public static class RegexPattern
     {
         /// <summary>
-        /// Pattern for email addresses from Microsoft reference source data annotation.
+        /// Pattern for email address from Microsoft reference source data annotation.
         /// </summary>
         /// Source: https://github.com/Microsoft/referencesource/blob/master/System.ComponentModel.DataAnnotations/DataAnnotations/EmailAddressAttribute.cs
         ///
@@ -22,55 +22,55 @@ namespace RegexPatterns
         public static Regex Phone = new Regex(@"^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$");
 
         /// <summary>
-        /// Pattern for decimal numbers on non-scientific notation. It allows both "." and "," delimiters.
+        /// Pattern for decimal number on non-scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         /// 
         public static Regex Decimal = new Regex(@"^[\+-]?\d+[,.]?\d*$");
 
         /// <summary>
-        /// Pattern for decimal numbers on non-scientific notation. It allows only "," delimiter.
+        /// Pattern for decimal number on non-scientific notation. It allows only "," delimiter.
         /// </summary>
         /// 
         public static Regex DecimalComma = new Regex(@"^[\+-]?\d+,?\d*$");
 
         /// <summary>
-        /// Pattern for decimal numbers on non-scientific notation. It allows only "." delimiter.
+        /// Pattern for decimal number on non-scientific notation. It allows only "." delimiter.
         /// </summary>
         /// 
         public static Regex DecimalDot = new Regex(@"^[\+-]?\d+\.?\d*$");
 
         /// <summary>
-        /// Pattern for decimal numbers on scientific notation. It allows both "." and "," delimiters.
+        /// Pattern for decimal number on scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         ///
         public static Regex DecimalScientific = new Regex(@"^[\+-]?\d+[,.]?\d*[eE][\+-]\d+$");
 
         /// <summary>
-        /// Pattern for decimal numbers on scientific notation. It allows only "," delimiter.
+        /// Pattern for decimal number on scientific notation. It allows only "," delimiter.
         /// </summary>
         ///
         public static Regex DecimalScientificComma = new Regex(@"^[\+-]?\d+,?\d*[eE][\+-]\d+$");
 
         /// <summary>
-        /// Pattern for decimal numbers on scientific notation. It allows only "." delimiter.
+        /// Pattern for decimal number on scientific notation. It allows only "." delimiter.
         /// </summary>
         ///
         public static Regex DecimalScientificDot = new Regex(@"^[\+-]?\d+\.?\d*[eE][\+-]\d+$");
 
         /// <summary>
-        /// Pattern for decimal numbers on any notation. It allows both "." and "," delimiters.
+        /// Pattern for decimal number on any notation. It allows both "." and "," delimiters.
         /// </summary>
         ///
         public static Regex DecimalAny = new Regex(@"^[\+-]?\d+[,.]?\d*([eE][\+-]?)?\d+$");
 
         /// <summary>
-        /// Pattern for decimal numbers on any notation. It allows only "," delimiter.
+        /// Pattern for decimal number on any notation. It allows only "," delimiter.
         /// </summary>
         ///
         public static Regex DecimalAnyComma = new Regex(@"^[\+-]?\d+,?\d*([eE][\+-]?)?\d+$");
 
         /// <summary>
-        /// Pattern for decimal numbers on any notation. It allows only "." delimiter.
+        /// Pattern for decimal number on any notation. It allows only "." delimiter.
         /// </summary>
         ///
         public static Regex DecimalAnyDot = new Regex(@"^[\+-]?\d+\.?\d*([eE][\+-]?)?\d+$");
