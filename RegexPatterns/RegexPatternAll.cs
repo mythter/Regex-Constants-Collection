@@ -94,46 +94,58 @@ namespace RegexPatterns
         public static Regex DecimalDot = new Regex(@"^[\+-]?\d+\.?\d*$");
 
         /// <summary>
-        /// Pattern for decimal number on scientific notation. It allows both "." and "," delimiters.
+        /// Pattern for decimal number with separator of the current culture on the computer.
+        /// </summary>
+        ///
+        public static Regex DecimalCulture = new Regex(@"^[\+-]?\d+" + CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator + @"?\d*$");
+
+        /// <summary>
+        /// Pattern for decimal number in scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         ///
         public static Regex DecimalScientific = new Regex(@"^[\+-]?\d+[,.]?\d*[eE][\+-]\d+$");
 
         /// <summary>
-        /// Pattern for decimal number on scientific notation. It allows only "," delimiter.
+        /// Pattern for decimal number in scientific notation. It allows only "," delimiter.
         /// </summary>
         ///
         public static Regex DecimalScientificComma = new Regex(@"^[\+-]?\d+,?\d*[eE][\+-]\d+$");
 
         /// <summary>
-        /// Pattern for decimal number on scientific notation. It allows only "." delimiter.
+        /// Pattern for decimal number in scientific notation. It allows only "." delimiter.
         /// </summary>
         ///
         public static Regex DecimalScientificDot = new Regex(@"^[\+-]?\d+\.?\d*[eE][\+-]\d+$");
 
         /// <summary>
-        /// Pattern for decimal number on any notation. It allows both "." and "," delimiters.
+        /// Pattern for decimal number in scientific notation with separator of the current culture on the computer.
+        /// </summary>
+        ///
+        public static Regex DecimalScientificCulture = new Regex(@"^[\+-]?\d+" + CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator + @"?\d*[eE][\+-]\d+$");
+
+        /// <summary>
+        /// Pattern for decimal number in any notation. It allows both "." and "," delimiters.
         /// </summary>
         ///
         public static Regex DecimalAny = new Regex(@"^[\+-]?\d+[,.]?\d*([eE][\+-]?)?\d+$");
 
         /// <summary>
-        /// Pattern for decimal number on any notation. It allows only "," delimiter.
+        /// Pattern for decimal number in any notation. It allows only "," delimiter.
         /// </summary>
         ///
         public static Regex DecimalAnyComma = new Regex(@"^[\+-]?\d+,?\d*([eE][\+-]?)?\d+$");
 
         /// <summary>
-        /// Pattern for decimal number on any notation. It allows only "." delimiter.
+        /// Pattern for decimal number in any notation. It allows only "." delimiter.
         /// </summary>
         ///
         public static Regex DecimalAnyDot = new Regex(@"^[\+-]?\d+\.?\d*([eE][\+-]?)?\d+$");
- 
+
         /// <summary>
-        /// Pattern for decimal number with separator of current culture on computer
+        /// Pattern for decimal number in any notation with separator of the current culture on the computer.
         /// </summary>
         ///
-        public static Regex  DecimalCulture = new Regex(@"^[+-]?\d+" + CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator + @"?\d*$");
+        public static Regex DecimalAnyCulture = new Regex(@"^[\+-]?\d+" + CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator + @"?\d*([eE][\+-]?)?\d+$");
 
         /// <summary>
         /// Pattern for password validation. it allows at least 8 characters; 
