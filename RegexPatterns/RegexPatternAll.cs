@@ -40,6 +40,13 @@ namespace RegexPatterns
         public static Regex Email4 = new Regex(@"^((\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)\s*[;,.]{0,1}\s*)+$");
 
         /// <summary>
+        /// Email validation as per RFC2822 standards.
+        /// </summary>
+        /// Source: https://regexr.com/2rhq7
+        ///
+        public static Regex Email5 = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+
+        /// <summary>
         /// Pattern for mobile phone number.
         /// </summary>
         /// Source: https://uibakery.io/regex-library/phone-number-csharp
