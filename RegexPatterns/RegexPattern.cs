@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace RegexPatterns
 {
@@ -74,5 +75,11 @@ namespace RegexPatterns
         /// </summary>
         ///
         public static Regex DecimalAnyDot = new Regex(@"^[\+-]?\d+\.?\d*([eE][\+-]?)?\d+$");
+
+        /// <summary>
+        /// Pattern for decimal number with separator of current culture on computer
+        /// </summary>
+        ///
+        public static Regex DecimalCulture = new Regex(@"^[+-]?\d+" + CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator + @"?\d*$");
     }
 }

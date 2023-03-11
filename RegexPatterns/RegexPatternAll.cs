@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace RegexPatterns
 {
@@ -127,12 +128,12 @@ namespace RegexPatterns
         /// </summary>
         ///
         public static Regex DecimalAnyDot = new Regex(@"^[\+-]?\d+\.?\d*([eE][\+-]?)?\d+$");
-
-        // -----------------------------------------------------------------------------------------
-        // Patter for decimal numbers with separator of your current culture 
-        // char separator = CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator[0];
-        // Regex  DecimalCulture = new Regex(@"^[+-]?\d+" + separator.ToString() + @"?\d*$");
-        // -----------------------------------------------------------------------------------------
+ 
+        /// <summary>
+        /// Pattern for decimal number with separator of current culture on computer
+        /// </summary>
+        ///
+        public static Regex  DecimalCulture = new Regex(@"^[+-]?\d+" + CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator + @"?\d*$");
 
         /// <summary>
         /// Pattern for password validation. it allows at least 8 characters; 
