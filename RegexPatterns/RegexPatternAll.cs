@@ -126,5 +126,14 @@ namespace RegexPatterns
         // char separator = CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator[0];
         // Regex  DecimalCulture = new Regex(@"^[+-]?\d+" + separator.ToString() + @"?\d*$");
         // -----------------------------------------------------------------------------------------
+
+        /// <summary>
+        /// Pattern for password validation. it allows at least 8 characters; 
+        /// must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number; 
+        /// can contain special characters.
+        /// </summary>
+        /// Source: https://regexr.com/3bfsi
+        /// 
+        public static Regex Password = new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$");
     }
 }
