@@ -18,6 +18,14 @@ namespace RegexPatterns
         /// <summary>
         /// Pattern for email address from MSDN.
         /// </summary>
+        /// Source: https://metanit.com/sharp/tutorial/7.4.php
+        ///
+        public static Regex Email1 = new Regex(@"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,17}))$");
+
+        /// <summary>
+        /// Pattern for email address from MSDN.
+        /// </summary>
         /// Source: https://learn.microsoft.com/en-us/dotnet/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format?redirectedfrom=MSDN
         ///
         public static Regex Email2 = new Regex(@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
@@ -59,21 +67,21 @@ namespace RegexPatterns
         /// </summary>
         /// Source: https://stackoverflow.com/a/47139109 in https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
         /// 
-        public static Regex Phone2 = new Regex(@"((?:\(?[2-9](?:(?=1)1[02-9]|(?:(?=0)0[1-9]|\d{2}))\)?\D{0,3})(?:\(?[2-9](?:(?=1)1[02-9]|\d{2})\)?\D{0,3})\d{4})");
+        public static Regex Phone1 = new Regex(@"((?:\(?[2-9](?:(?=1)1[02-9]|(?:(?=0)0[1-9]|\d{2}))\)?\D{0,3})(?:\(?[2-9](?:(?=1)1[02-9]|\d{2})\)?\D{0,3})\d{4})");
 
         /// <summary>
         /// Pattern for mobile phone number.
         /// </summary>
         /// Source: https://stackoverflow.com/a/18091377 in https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
         /// 
-        public static Regex Phone3 = new Regex(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}");
+        public static Regex Phone2 = new Regex(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}");
 
         /// <summary>
         /// Pattern for mobile phone number.
         /// </summary>
         /// Source: https://regexr.com/38pvb
         /// 
-        public static Regex Phone4 = new Regex(@"^\s*(?:\+?(\d{1,3}))?([-. (]*(\d{3})[-. )]*)?((\d{3})[-. ]*(\d{2,4})(?:[-.x ]*(\d+))?)\s*$");
+        public static Regex Phone3 = new Regex(@"^\s*(?:\+?(\d{1,3}))?([-. (]*(\d{3})[-. )]*)?((\d{3})[-. ]*(\d{2,4})(?:[-.x ]*(\d+))?)\s*$");
 
         /// <summary>
         /// Pattern for decimal number on non-scientific notation. It allows both "." and "," delimiters.
