@@ -111,25 +111,25 @@ namespace RegexPatterns
         /// Pattern for decimal number in scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         ///
-        public static Regex DecimalScientific = new Regex(@"^[\+-]?\d+[,.]?\d*[eE][\+-]\d+$");
+        public static Regex DecimalScientific = new Regex(@"^[\+-]?\d+[,.]?\d*[eE][\+-]?\d+$");
 
         /// <summary>
         /// Pattern for decimal number in scientific notation. It allows only "," delimiter.
         /// </summary>
         ///
-        public static Regex DecimalScientificComma = new Regex(@"^[\+-]?\d+,?\d*[eE][\+-]\d+$");
+        public static Regex DecimalScientificComma = new Regex(@"^[\+-]?\d+,?\d*[eE][\+-]?\d+$");
 
         /// <summary>
         /// Pattern for decimal number in scientific notation. It allows only "." delimiter.
         /// </summary>
         ///
-        public static Regex DecimalScientificDot = new Regex(@"^[\+-]?\d+\.?\d*[eE][\+-]\d+$");
+        public static Regex DecimalScientificDot = new Regex(@"^[\+-]?\d+\.?\d*[eE][\+-]?\d+$");
 
         /// <summary>
         /// Pattern for decimal number in scientific notation with separator of the current culture on the computer.
         /// </summary>
         ///
-        public static Regex DecimalScientificCulture = new Regex(@"^[\+-]?\d+" + CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator + @"?\d*[eE][\+-]\d+$");
+        public static Regex DecimalScientificCulture = new Regex(@"^[\+-]?\d+" + CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator + @"?\d*[eE][\+-]?\d+$");
 
         /// <summary>
         /// Pattern for decimal number in any notation. It allows both "." and "," delimiters.
