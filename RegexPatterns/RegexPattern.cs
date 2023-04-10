@@ -23,6 +23,48 @@ namespace RegexPatterns
         public static Regex Phone = new Regex(@"^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$");
 
         /// <summary>
+        /// Pattern for integer number on non-scientific notation without leading zeros.
+        /// </summary>
+        /// Source: https://stackoverflow.com/questions/9043551/regex-that-matches-integers-in-between-whitespace-or-start-end-of-string-only
+        ///
+        public static Regex Integer = new Regex(@"^([+-]?[1-9]\d*|0)$");
+
+        /// <summary>
+        /// Pattern for integer number on non-scientific notation that allows leading zeros.
+        /// </summary>
+        /// Source: https://stackoverflow.com/questions/9043551/regex-that-matches-integers-in-between-whitespace-or-start-end-of-string-only
+        ///
+        public static Regex IntegerZeros = new Regex(@"^[-+]?\d+$");
+
+        /// <summary>
+        /// Pattern for integer number on scientific notation without leading zeros.
+        /// </summary>
+        /// Source: https://stackoverflow.com/questions/9043551/regex-that-matches-integers-in-between-whitespace-or-start-end-of-string-only
+        ///
+        public static Regex IntegerScientific = new Regex(@"^([+-]?[1-9]\d*|0)([Ee][+-]?[1-9]\d*)$");
+
+        /// <summary>
+        /// Pattern for integer number on scientific notation that allows leading zeros.
+        /// </summary>
+        /// Source: https://stackoverflow.com/questions/9043551/regex-that-matches-integers-in-between-whitespace-or-start-end-of-string-only
+        ///
+        public static Regex IntegerScientificZeros = new Regex(@"^([+-]?\d+)([Ee][+-]?\d+)$");
+
+        /// <summary>
+        /// Pattern for integer number on any notation without leading zeros.
+        /// </summary>
+        /// Source: https://stackoverflow.com/questions/9043551/regex-that-matches-integers-in-between-whitespace-or-start-end-of-string-only
+        ///
+        public static Regex IntegerAny = new Regex(@"^([+-]?[1-9]\d*|0)([Ee][+-]?[1-9]\d*)?$");
+
+        /// <summary>
+        /// Pattern for integer number on scientific notation that allows leading zeros.
+        /// </summary>
+        /// Source: https://stackoverflow.com/questions/9043551/regex-that-matches-integers-in-between-whitespace-or-start-end-of-string-only
+        ///
+        public static Regex IntegerAnyZeros = new Regex(@"^([+-]?\d+)([Ee][+-]?\d+)?$");
+
+        /// <summary>
         /// Pattern for decimal number on non-scientific notation. It allows both "." and "," delimiters.
         /// </summary>
         /// 
